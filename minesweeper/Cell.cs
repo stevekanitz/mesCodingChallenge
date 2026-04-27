@@ -8,6 +8,12 @@
 
         public Point Location { get; set; }
 
+        public int Row { get; set; }
+
+        public int Column { get; set; }
+
+        public int Value { get; set; }
+
         public CellState State
         {
             get => _state;
@@ -21,5 +27,7 @@
         public bool HasMine { get; set; }
 
         public bool Sweeping { get; set; }
+        
     }
+    
 }

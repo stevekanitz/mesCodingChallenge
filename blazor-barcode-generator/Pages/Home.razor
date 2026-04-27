@@ -1,0 +1,40 @@
+﻿@page "/"
+@using NetBarcode
+
+<h3>Barcode Generator</h3>
+
+<div class="mb-3">
+    <label>Enter Value:</label>
+    <input @bind="barcodeValue" @bind:event="oninput" class="form-control" />
+</div>
+
+@if (!string.IsNullOrWhiteSpace(barcodeValue))
+{
+    <img src="@barcodeImage" alt="Barcode" />
+}
+
+@code {
+    private string _barcodeValue = "";
+    private string barcodeValue
+    {
+        get => _barcodeValue;
+        set
+        {
+            _barcodeValue = value;
+            UpdateBarcode();
+        }
+    }
+
+    private string? barcodeImage;
+
+    protected override void OnInitialized()
+    {
+        UpdateBarcode();
+    }
+
+    private void UpdateBarcode()
+    {
+        var barcode = new Barcode(barcodeValue, NetBarcode.Type.Code128);
+        barcodeImage = $"data:image/png;base64,{barcode.GetBase64Image()}";
+    }
+}

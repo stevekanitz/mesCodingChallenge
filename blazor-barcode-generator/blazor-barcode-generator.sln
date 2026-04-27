@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blazor-barcode-generator", "blazor-barcode-generator.csproj", "{E05657D3-9453-434C-C83B-AC10318DEB24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E05657D3-9453-434C-C83B-AC10318DEB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05657D3-9453-434C-C83B-AC10318DEB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05657D3-9453-434C-C83B-AC10318DEB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05657D3-9453-434C-C83B-AC10318DEB24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {000327AA-F777-40C5-A0BB-ADADF2AB9462}
+	EndGlobalSection
+EndGlobal

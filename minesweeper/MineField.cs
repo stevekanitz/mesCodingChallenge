@@ -44,7 +44,10 @@ namespace Minesweeper
                 {
                     var cell = new Cell
                     {
-                        Location = new Point(x * 16, y * 16)
+                        Location = new Point(x * 16, y * 16),
+                        Row = y,
+                        Column = x
+
                     };
                     cell.StateChanged += (s, e) => RedrawCell((Cell)s!);
                     Cells[x, y] = cell;
