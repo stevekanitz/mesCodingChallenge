@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "03YFDiVe7RM=",
+  "dgSpecHash": "uFh29wyuT3Y=",
   "success": true,
-  "projectFilePath": "c:\\Users\\steve.kanitz\\source\\repos\\mes-coding-challenges\\blazor-barcode-generator\\blazor-barcode-generator.csproj",
+  "projectFilePath": "C:\\Users\\steve.kanitz\\source\\repos\\mes-coding-challenges\\blazor-barcode-generator\\blazor-barcode-generator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.6\\microsoft.aspnetcore.app.internal.assets.10.0.6.nupkg.sha512",
+    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.7\\microsoft.aspnetcore.app.internal.assets.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.7\\microsoft.aspnetcore.authorization.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.aspnetcore.components\\10.0.7\\microsoft.aspnetcore.components.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\10.0.7\\microsoft.aspnetcore.components.analyzers.10.0.7.nupkg.sha512",
@@ -13,7 +13,7 @@
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\10.0.7\\microsoft.aspnetcore.components.webassembly.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\10.0.7\\microsoft.aspnetcore.components.webassembly.devserver.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.aspnetcore.metadata\\10.0.7\\microsoft.aspnetcore.metadata.10.0.7.nupkg.sha512",
-    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.dotnet.hotreload.webassembly.browser\\10.0.202\\microsoft.dotnet.hotreload.webassembly.browser.10.0.202.nupkg.sha512",
+    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.dotnet.hotreload.webassembly.browser\\10.0.203\\microsoft.dotnet.hotreload.webassembly.browser.10.0.203.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.7\\microsoft.extensions.configuration.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.7\\microsoft.extensions.configuration.abstractions.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.7\\microsoft.extensions.configuration.binder.10.0.7.nupkg.sha512",
@@ -34,8 +34,8 @@
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.extensions.validation\\10.0.7\\microsoft.extensions.validation.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.jsinterop\\10.0.7\\microsoft.jsinterop.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.jsinterop.webassembly\\10.0.7\\microsoft.jsinterop.webassembly.10.0.7.nupkg.sha512",
-    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.6\\microsoft.net.illink.tasks.10.0.6.nupkg.sha512",
-    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\10.0.6\\microsoft.net.sdk.webassembly.pack.10.0.6.nupkg.sha512",
+    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.7\\microsoft.net.illink.tasks.10.0.7.nupkg.sha512",
+    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\10.0.7\\microsoft.net.sdk.webassembly.pack.10.0.7.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\netbarcode\\1.8.3\\netbarcode.1.8.3.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\sixlabors.fonts\\1.0.1\\sixlabors.fonts.1.0.1.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\sixlabors.imagesharp\\2.1.11\\sixlabors.imagesharp.2.1.11.nupkg.sha512",
@@ -44,7 +44,7 @@
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\syncfusion.blazor.core\\33.2.3\\syncfusion.blazor.core.33.2.3.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\syncfusion.blazor.themes\\33.2.3\\syncfusion.blazor.themes.33.2.3.nupkg.sha512",
     "C:\\Users\\steve.kanitz\\.nuget\\packages\\syncfusion.licensing\\33.2.3\\syncfusion.licensing.33.2.3.nupkg.sha512",
-    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\10.0.6\\microsoft.netcore.app.runtime.mono.browser-wasm.10.0.6.nupkg.sha512"
+    "C:\\Users\\steve.kanitz\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\10.0.7\\microsoft.netcore.app.runtime.mono.browser-wasm.10.0.7.nupkg.sha512"
   ],
   "logs": []
 }

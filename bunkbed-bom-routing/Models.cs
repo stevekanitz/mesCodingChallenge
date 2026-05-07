@@ -11,7 +11,7 @@ public class Bom
 
 public class Routing
 {
-    public int step {get; set;}
+    public int? step {get; set;}
     public string description {get; set;}
     public int taktTime {get; set;}
 }

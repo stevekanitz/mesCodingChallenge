@@ -14,6 +14,7 @@ var bom = JsonSerializer.Deserialize<Bom>(bomJson);
 var routing = JsonSerializer.Deserialize<List<Routing>>(routingJson);
 
 var providedItems = new Dictionary<string, int>();
+var providedItemSteps = new List<int?>();
 
 int totalTakt = 0;
 
@@ -30,7 +31,7 @@ File.WriteAllText(outputPath, sb.ToString());
 foreach (var step in routing)
 { 
 
-    bool hasProvided = bom.bom.Any(b=> b.step == step.step && b.source == "Provided");
+    bool hasProvided = providedItemSteps.Contains(step.step);
 
     if (!hasProvided)
     {
@@ -50,7 +51,7 @@ void searchBom(Bom item)
         {
             providedItems[item.description] = 0;
         }
-
+        providedItemSteps.Add(item.step);
         providedItems[item.description] += item.quantity;
     }
 

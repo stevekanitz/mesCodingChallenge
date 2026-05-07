@@ -75,12 +75,19 @@ namespace Minesweeper
                 return;
             }
 
-            var currentCell = _cells[e.X / 16, e.Y / 16];
-            if (currentCell.State == CellState.Unknown || currentCell.State == CellState.Flagged)
+            try
             {
-                currentCell.Sweeping = false;
-                RedrawCell(currentCell);
-                CellClicked?.Invoke(this, new CellClickedEventArgs(currentCell, e.Button));
+                var currentCell = _cells[e.X / 16, e.Y / 16];
+                if (currentCell.State == CellState.Unknown || currentCell.State == CellState.Flagged)
+                {
+                    currentCell.Sweeping = false;
+                    RedrawCell(currentCell);
+                    CellClicked?.Invoke(this, new CellClickedEventArgs(currentCell, e.Button));
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }
         }
 
@@ -92,24 +99,31 @@ namespace Minesweeper
             }
             if (e.Button == MouseButtons.Left)
             {
-                var currentCell = _cells[e.X / 16, e.Y / 16];
-
-                for (var x = 0; x < 9; x++)
+                try
                 {
-                    for (var y = 0; y < 9; y++)
+                    var currentCell = _cells[e.X / 16, e.Y / 16];
+
+                    for (var x = 0; x < 9; x++)
                     {
-                        var cell = _cells[x, y];
-                        if (cell != currentCell && cell.Sweeping)
+                        for (var y = 0; y < 9; y++)
                         {
-                            cell.Sweeping = false;
-                            RedrawCell(cell);
+                            var cell = _cells[x, y];
+                            if (cell != currentCell && cell.Sweeping)
+                            {
+                                cell.Sweeping = false;
+                                RedrawCell(cell);
+                            }
                         }
                     }
+                    if (!currentCell.Sweeping)
+                    {
+                        currentCell.Sweeping = true;
+                        RedrawCell(currentCell);
+                    }
                 }
-                if (!currentCell.Sweeping)
+                catch(Exception ex)
                 {
-                    currentCell.Sweeping = true;
-                    RedrawCell(currentCell);
+                    Console.WriteLine(ex.ToString());
                 }
             }
         }
@@ -120,12 +134,19 @@ namespace Minesweeper
             {
                 return;
             }
-            var cell = _cells[e.X / 16, e.Y / 16];
-            if (cell.State == CellState.Unknown)
+            try
             {
-                cell.Sweeping = true;
-                using var g = Graphics.FromImage(this.BackgroundImage!);
-                RedrawCell(cell);
+                var cell = _cells[e.X / 16, e.Y / 16];
+                if (cell.State == CellState.Unknown)
+                {
+                    cell.Sweeping = true;
+                    using var g = Graphics.FromImage(this.BackgroundImage!);
+                    RedrawCell(cell);
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }
         }
 
